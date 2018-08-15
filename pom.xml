@@ -18,6 +18,19 @@
     <dependencyManagement>
         <dependencies>
 
+            <!-- 子module -->
+            <dependency>
+                <groupId>com.lanxiang.netty.learning</groupId>
+                <artifactId>netty-learning.provider</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.lanxiang.netty.learning</groupId>
+                <artifactId>netty-learning.domain</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
             <!-- logger -->
             <dependency>
                 <groupId>org.apache.logging.log4j</groupId>
@@ -25,7 +38,6 @@
                 <version>${log4j2.version}</version>
             </dependency>
 
-            <!-- logger -->
             <dependency>
                 <groupId>org.slf4j</groupId>
                 <artifactId>slf4j-api</artifactId>
@@ -275,6 +287,7 @@
     </profiles>
 
     <modules>
-        <!--<module>service</module>-->
+        <module>provider</module>
+        <module>domain</module>
     </modules>
 </project>

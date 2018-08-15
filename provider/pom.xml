@@ -12,6 +12,13 @@
     <packaging>jar</packaging>
     <artifactId>netty-learning.provider</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.lanxiang.netty.learning</groupId>
+            <artifactId>netty-learning.domain</artifactId>
+        </dependency>
+    </dependencies>
+
     <build>
         <finalName>${project.artifactId}-release-${project.version}</finalName>
         <plugins>
